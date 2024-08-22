@@ -1,160 +1,159 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    padding: 20px;
-    background-color: antiquewhite
+body {
+  padding: 20px;
+  background-color: antiquewhite;
 }
 
 .brand {
-    font-style: italic;
-    font-size: 80px;  
-    text-align: center;
-    text-decoration: underline;
+  font-style: italic;
+  font-size: 80px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Creating the main grid layout for the page*/
 
 .page-head {
-    grid-area: head;
+  grid-area: head;
 }
 
 .site-nav {
-    grid-area: nav;
+  grid-area: nav;
 }
 
 .breaking-story {
-    grid-area: breaking;
+  grid-area: breaking;
 }
 
 .story-1 {
-    grid-area: story-1;
+  grid-area: story-1;
 }
 
 .story-2 {
-    grid-area: story-2;
+  grid-area: story-2;
 }
 
 .the-page {
-    display: grid;
-    grid-template-areas:
-        "head head head"
-        "breaking breaking story-2"
-        "story-1 story-1 story-2"
-        "nav nav nav";
-        
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "breaking breaking story-2"
+    "story-1 story-1 story-2"
+    "nav nav nav";
 }
 
 /*Main grid created above, below defines the grid style*/
 
-.page-head{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 5px solid black;
-    background-color: lightgray;
+.page-head {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 5px solid black;
+  background-color: lightgray;
 }
 
 .breaking-story {
-    padding: 8px;
-    border: 5px solid black;
-    border-right: none;
-    background-color: lightgray;
+  padding: 8px;
+  border: 5px solid black;
+  border-right: none;
+  background-color: lightgray;
 }
 
 .story-1 {
-    padding: 8px;
-    border: 5px solid black;
-    border-top: none;
-    border-right: none;
-    background-color: lightgray;
+  padding: 8px;
+  border: 5px solid black;
+  border-top: none;
+  border-right: none;
+  background-color: lightgray;
 }
 
 .story-2 {
-    padding: 8px;
-    border: 5px solid black;
-    background-color: lightgray;
+  padding: 8px;
+  border: 5px solid black;
+  background-color: lightgray;
 }
 
 .title {
-    text-align: center;
-    padding: 2px;
-    text-transform: capitalize;
+  text-align: center;
+  padding: 2px;
+  text-transform: capitalize;
 }
 
 /* Now creating the breaking story mini grid */
 
 .breaking-image {
-    grid-area: b-image;
-    border: 3px solid darkgray;
-    margin-top: auto;
-    margin-bottom: auto;
+  grid-area: b-image;
+  border: 3px solid darkgray;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.breaking-title{
-    grid-area: b-title;
-    margin-left: 8px;
-    border: 5px dashed black;
+.breaking-title {
+  grid-area: b-title;
+  margin-left: 8px;
+  border: 5px dashed black;
 }
 
 .emphasize {
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .breaking-text {
-    grid-area: b-text;
-    padding: 4px;
+  grid-area: b-text;
+  padding: 4px;
 }
 
 .breaking-story-grid {
-    display: grid;
-    grid-template-areas: 
-        "b-image b-image b-title"
-        "b-image b-image b-text"
-        "b-image b-image b-text";
+  display: grid;
+  grid-template-areas:
+    "b-image b-image b-title"
+    "b-image b-image b-text"
+    "b-image b-image b-text";
 }
 
 /*Site navigation bar properties*/
 
 .site-nav {
-    padding: 8px;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    border: 5px solid black;
-    border-top: none;
-    background-color: lightgray;
+  padding: 8px;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border: 5px solid black;
+  border-top: none;
+  background-color: lightgray;
 }
 
 .nav-link {
-    font-size: 50px;
-    text-decoration: underline;
-    color: blue;
+  font-size: 50px;
+  text-decoration: underline;
+  color: blue;
 }
 
 .nav-link:hover {
-    color: aqua;
+  color: aqua;
 }
 
 /*tag changes*/
 
 h2 {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .sign-off {
-    padding: 20px;
-    margin: 30px;
-    text-align: center;
-    font-size: 12px;
-    color: darkgreen;
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: darkgreen;
 }
